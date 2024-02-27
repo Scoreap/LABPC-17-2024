@@ -1,24 +1,24 @@
-﻿class Semana7
+﻿﻿class T2SACP1185324E1
 {
     static void Main(string[] args)
     {
-        string sNombre = " ";
-        string sEdad = " ";
-        string sCarrera = " ";
-        string sCarne = " ";
+        double vi = 0;
+        double a = 0;
+        double t = 0;
+        double vf = 0;
 
-        Console.WriteLine("Mi segundo programa");
-        Console.WriteLine("Ingrese su nombre: ");
-        sNombre = Console.ReadLine();
+        
+        Console.WriteLine("Ingrese la velocidad inicial: ");
+        vi = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("Ingrese su edad: ");
-        sEdad = Console.ReadLine();
+        Console.WriteLine("Ingrese la aceleración: ");
+        a =double.Parse(Console.ReadLine());
 
-        Console.WriteLine("Ingrese su carrera: ");
-        sCarrera = Console.ReadLine();
+        Console.WriteLine("Ingrese el tiempo: ");
+        t = double.Parse(Console.ReadLine());
+        vf = vi + (a * t);
 
-        Console.WriteLine("Ingrese su número de Carnet: ");
-        sCarne = Console.ReadLine();
+        Console.WriteLine("La velocidad final = " + vf);
 
         Console.ReadKey();
     } 
